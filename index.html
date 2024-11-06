@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Advisory Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Financial Advisory Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculators">Calculators</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Calculator Section -->
+    <section id="calculators" class="section">
+        <h2>Loan & Interest Calculators</h2>
+
+        <!-- Loan Calculator -->
+        <div class="calculator" id="loanCalculator">
+            <h3>Loan Calculator</h3>
+            <label>Loan Amount: <input type="number" id="loanAmount" required></label>
+            <label>Interest Rate (%): <input type="number" id="interestRate" required></label>
+            <label>Loan Term (years): <input type="number" id="loanTerm" required></label>
+            <button onclick="calculateLoan()">Calculate</button>
+            <p id="loanResult"></p>
+        </div>
+
+        <!-- Interest Calculator -->
+        <div class="calculator" id="interestCalculator">
+            <h3>Interest Calculator</h3>
+            <label>Principal Amount: <input type="number" id="principal" required></label>
+            <label>Rate of Interest (%): <input type="number" id="rate" required></label>
+            <label>Time (years): <input type="number" id="time" required></label>
+            <button onclick="calculateInterest()">Calculate</button>
+            <p id="interestResult"></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We provide expert financial advisory services to help you make informed financial decisions.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label>Name: <input type="text" required></label>
+            <label>Email: <input type="email" required></label>
+            <label>Phone: <input type="tel"></label>
+            <label>Preferred Consultation Date: <input type="date" required></label>
+            <label>Message: <textarea required></textarea></label>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
